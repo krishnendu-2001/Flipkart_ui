@@ -10,6 +10,20 @@ class notificationpage extends StatefulWidget {
 class _notificationpageState extends State<notificationpage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return SafeArea(
+        child: Scaffold(
+      appBar: AppBar(
+        title: Text('Notification'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.search,
+              color: Colors.blue,
+            ),
+            onPressed: () {},
+          )
+        ],
+      ),
+    ));
   }
 }

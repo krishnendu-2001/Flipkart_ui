@@ -17,11 +17,11 @@ class _bottomnavState extends State<bottomnav> {
   int myIndex = 0;
 
   final List<Widget> _screens = [
-    homescreen(),
-    categorypage(),
-    notificationpage(),
-    accountpage(),
-    cartpage(),
+    const HomeScreen(),
+    const categorypage(),
+    const notificationpage(),
+    const accountpage(),
+    const cartpage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class _bottomnavState extends State<bottomnav> {
               });
             },
             currentIndex: myIndex,
-            items: [
+            items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home_outlined, color: Colors.black45),
                 label: 'Home',
@@ -55,9 +55,6 @@ class _bottomnavState extends State<bottomnav> {
               BottomNavigationBarItem(
                   icon: Icon(Icons.card_travel_sharp, color: Colors.black45),
                   label: 'Cart'),
-            ]
-          )
-        );
+            ]));
   }
-
 }
